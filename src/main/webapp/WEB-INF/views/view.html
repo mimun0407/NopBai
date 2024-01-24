@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/Cus/update}" th:object="${Product}">
+    <input type="hidden" th:field="*{id}">
+    <label>Name</label>
+    <input type="text" th:field="*{name}">
+    <label>Code</label>
+    <input type="text" th:field="*{code}">
+    <label>Cost</label>
+    <input type="text" th:field="*{cost}">
+    <label>Day</label>
+    <input type="text" th:field="*{day}">
+    <label>Description</label>
+    <input type="text" th:field="*{moTa}">
+    <input type="submit" value="enter">
+</form>
+</body>
+</html>
