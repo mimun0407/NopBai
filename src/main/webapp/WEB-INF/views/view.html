@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<a th:href="@{/Cus}">back to list</a>
+
 <form method="post" th:action="@{/Cus/update}" th:object="${Product}">
     <input type="hidden" th:field="*{id}">
     <label>Name</label>
